@@ -2,56 +2,112 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — The Adulting Dept</title>
+<title>Privacy Policy — BASCO Content Ops</title>
 <style>
-  :root { --bg:#F6F2EA; --ink:#2B2722; --muted:#6B6257; --sage:#43603F; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#1B1916; --ink:#EDE7DD; --muted:#A79C8E; --sage:#A9C4A4; } }
+  :root { --bg:#F6F2EA; --ink:#2B2722; --muted:#6B6257; --sage:#43603F; --line:#D9D1C5; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1B1916; --ink:#EDE7DD; --muted:#A79C8E; --sage:#A9C4A4; --line:#3B3731; } }
+  * { box-sizing:border-box; }
   body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.65 Georgia, "Iowan Old Style", serif; }
-  main { max-width:40rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
-  h1 { font-size:1.8rem; line-height:1.2; } h2 { font-size:1.15rem; margin-top:2.2rem; color:var(--sage); }
-  p, li { color:var(--ink); } .muted { color:var(--muted); font-size:.9rem; }
+  main { max-width:42rem; margin:0 auto; padding:3rem 1.25rem 5rem; }
+  nav { display:flex; gap:1rem; padding-bottom:1.25rem; border-bottom:1px solid var(--line); }
+  a { color:var(--sage); }
+  h1 { font-size:1.9rem; line-height:1.2; margin-top:2rem; }
+  h2 { font-size:1.15rem; margin-top:2.2rem; color:var(--sage); }
+  p, li { color:var(--ink); }
+  .muted { color:var(--muted); font-size:.9rem; }
 </style>
 <main>
+  <nav aria-label="Legal pages">
+    <a href="./" aria-current="page">Privacy Policy</a>
+    <a href="./terms.html">Terms of Service</a>
+  </nav>
+
   <h1>Privacy Policy</h1>
-  <p class="muted">The Adulting Dept — content operations tool · Effective July 16, 2026</p>
+  <p class="muted">BASCO Content Ops · Operated by The Adulting Dept · Effective July 16, 2026</p>
 
-  <p>This application is a personal content-management tool operated by The Adulting
-  Dept. It exists to draft, publish, and measure The Adulting Dept's own social
-  media posts. It has a single user: the account owner.</p>
+  <p>This Privacy Policy explains how BASCO Content Ops accesses, uses, stores, and
+  deletes information when a creator connects a social-media account or uses the
+  content operations dashboard.</p>
 
-  <h2>What data the app accesses</h2>
-  <p>Through the Meta (Facebook and Instagram) APIs, the app accesses only data
-  belonging to The Adulting Dept's own accounts: the list of Pages the owner
-  manages, the linked Instagram professional account, the account's own published
-  posts, and aggregate performance insights for those posts (such as likes,
-  comments, saves, shares, and views).</p>
+  <h2>Information you provide</h2>
+  <p>The application stores content and operational information that you choose to
+  provide, such as brand details, content ideas, drafts, captions, source notes,
+  publishing selections, and schedules.</p>
 
-  <h2>What the app does not do</h2>
+  <h2>Information from connected platforms</h2>
+  <p>The application accesses only the information needed to connect authorized
+  accounts, import their own public content, and report aggregate performance:</p>
   <ul>
-    <li>It does not collect, store, or process data about any person other than the account owner.</li>
-    <li>It does not access followers' identities, messages, or personal information.</li>
-    <li>It does not sell, share, license, or transfer any data to third parties.</li>
-    <li>It does not use data for advertising, profiling, or training machine-learning models.</li>
+    <li><strong>TikTok:</strong> the authorized user's open ID and display name;
+    their public videos and video metadata; and counts such as views, likes,
+    comments, and shares. The application does not access private messages,
+    followers' identities, or non-public videos.</li>
+    <li><strong>Meta and Threads:</strong> authorized Page or account identifiers,
+    names or handles, the account's own published posts, public post information,
+    and available aggregate insights such as views, likes, comments, saves,
+    replies, reposts, and shares.</li>
+    <li><strong>YouTube:</strong> public channel and video information available
+    through the YouTube Data API, including titles, descriptions, publication
+    dates, views, likes, and comments. The current integration uses an API key
+    and does not request access to a user's private Google account data.</li>
   </ul>
 
-  <h2>Where data is stored</h2>
-  <p>Post content and aggregate metrics are stored in a local database on the
-  account owner's own computer. Access tokens are stored in the operating
-  system's keychain on that same computer. Nothing is stored on servers operated
-  by this application.</p>
+  <h2>How information is used</h2>
+  <p>Information is used to operate features you request: organizing content,
+  drafting, publishing or scheduling, importing account history, displaying
+  performance, comparing results over time, and maintaining authorized account
+  connections. Connected-platform data is not sold, used for advertising, or
+  used to build profiles about followers or other people.</p>
 
-  <h2 id="data-deletion">Data deletion</h2>
-  <p>All data the app holds can be deleted at any time by the account owner by
-  deleting the local database and revoking the app's access in
-  <em>Facebook&nbsp;Settings → Apps and Websites</em>. Because the app stores no
-  data about anyone other than its owner, there is no third-party data to
-  request deletion of. For any questions or deletion requests, contact the
-  operator at the email address below.</p>
+  <h2>Storage and security</h2>
+  <p>Content, public post history, and aggregate metrics are stored in a local
+  database on the application operator's computer. Access tokens, refresh tokens,
+  client secrets, and API keys are stored in the operating system's protected
+  keychain on that computer rather than in the public website or source code.
+  Reasonable technical measures are used to limit access, but no storage method
+  can be guaranteed completely secure.</p>
+
+  <h2>Service providers and disclosure</h2>
+  <p>The application sends information to a connected platform when necessary to
+  perform an action you request. If enabled by the operator, Blotato processes
+  content for publishing and Anthropic processes supplied draft context to
+  generate text. TikTok account data and video metrics are not sent to Anthropic
+  for model training. Information may also be disclosed when required by law or
+  necessary to protect rights, safety, and security. Personal information is not
+  sold or rented.</p>
+
+  <h2>Retention</h2>
+  <p>Locally stored content and metrics remain until the operator deletes the
+  applicable records or local database. Platform credentials remain in the
+  protected keychain until they expire, are replaced, or are deleted. Revoking
+  access at a platform prevents future collection but does not automatically
+  erase information already stored locally.</p>
+
+  <h2 id="data-deletion">Your choices and data deletion</h2>
+  <p>You may revoke BASCO Content Ops in the connected platform's app-permission
+  settings at any time. To remove information held by the application, delete
+  the applicable local records or database and remove the related credentials
+  from the operating system keychain. You may also request assistance by emailing
+  <a href="mailto:toya.a.dorsey@gmail.com">toya.a.dorsey@gmail.com</a>. Requests
+  will be handled after reasonable verification that the requester controls the
+  relevant account.</p>
+
+  <h2>Children's privacy</h2>
+  <p>BASCO Content Ops is not directed to children under 13 and does not knowingly
+  collect personal information from children.</p>
+
+  <h2>This public policy site</h2>
+  <p>This policy site does not contain account login, forms, advertising, or
+  application analytics. It is hosted through GitHub Pages, so GitHub may process
+  standard technical request information under its own privacy terms when the
+  page is visited.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>This policy may be updated as the application or connected services change.
+  Material revisions will be published here with an updated effective date.</p>
 
   <h2>Contact</h2>
-  <p>toya.a.dorsey@gmail.com</p>
-
-  <p class="muted">This policy may be updated as the tool changes; the effective
-  date above reflects the latest revision.</p>
+  <p>Questions or deletion requests may be sent to
+  <a href="mailto:toya.a.dorsey@gmail.com">toya.a.dorsey@gmail.com</a>.</p>
 </main>
 </html>
